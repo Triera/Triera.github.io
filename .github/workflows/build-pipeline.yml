@@ -24,6 +24,11 @@ jobs:
         run: npm run lint:ts
       - name: Run styles lint and format check
         run: npm run lint:css
+      - name: "I like sushi :D"
+        run: echo "Hello $FIRST_NAME $MIDDLE_NAME, do you like sushi?<3"
+        env:
+          FIRST_NAME: Triera
+          LAST_NAME: Gashi
   deploy:
     needs: build
     runs-on: ubuntu-latest
