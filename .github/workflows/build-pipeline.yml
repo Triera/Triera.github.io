@@ -19,7 +19,7 @@ jobs:
         run: npm ci
       # Step 3 - Add tests and linting here
       - name: Run tests
-        run: npm run test
+        run: npm test
       - name: Run typescript lint and format check
         run: npm run lint:ts
       - name: Run styles lint and format check
