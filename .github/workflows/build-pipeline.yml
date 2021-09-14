@@ -29,6 +29,10 @@ jobs:
         env:
           FIRST_NAME: Triera
           LAST_NAME: Gashi
+      - name: "I like sushi - twice"
+        run: echo "$SECRET"
+        env:
+          SECRET: ${{secrets.PASSWORD}}
   deploy:
     needs: build
     runs-on: ubuntu-latest
